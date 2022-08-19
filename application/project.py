@@ -23,13 +23,6 @@ def find_project(project_id: ProjectId) -> Project:
     return project
 
 
-# def delete_project(project_id: ProjectId) -> None:
-#     project: Project = rep.find_project(project_id)
-#     if not exists(project):
-#         raise NotFoundException(f'{project_id.value} is not found')
-#     rep.delete_project(project)
-
-
 def update_project(project_id: ProjectId, body) -> None:
     project: Project = rep.find_project(project_id)
     if not exists(project):

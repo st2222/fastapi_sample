@@ -23,13 +23,6 @@ def find_report(report_id: ReportId) -> Report:
     return report
 
 
-# def delete_report(report_id: ReportId) -> None:
-#     report: Report = rep.find_report(report_id)
-#     if not exists(report):
-#         raise NotFoundException(f'{report_id.value} is not found')
-#     rep.delete_report(report)
-
-
 def update_report(report_id: ReportId, body) -> None:
     report: Report = rep.find_report(report_id)
     if not exists(report):

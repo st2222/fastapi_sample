@@ -13,9 +13,6 @@ from domain.models.user.user_id import UserId
 class Report:
     def __init__(self, report_id: ReportId, user_id: UserId, date: datetime, comment: Comment, plan: Plan,
                  report_detail: List[ReportDetail]) -> None:
-        # TODO: ここでバリデーションやルールなど書く
-        if False:
-            raise Exception
 
         self.report_id = report_id
         self.user_id = user_id

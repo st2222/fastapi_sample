@@ -15,9 +15,6 @@ class ProjectWithUserPerMonth:
     def __init__(self, month: Date, project_id: ProjectId, user_id: UserId, user_name: UserName, role: Role,
                  cost_per_hour,
                  total_time: Hour) -> None:
-        # TODO: ここでバリデーションやルールなど書く
-        if False:
-            raise Exception
 
         self.month = month
         self.project_id = project_id

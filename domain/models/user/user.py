@@ -21,9 +21,6 @@ class User:
                  delete_flag: Optional[bool] = None,
                  role: Optional[Role] = None,
                  reports: List[Report] = []) -> None:
-        # TODO: ここでバリデーションやルールなど書く
-        # if False:
-        #     raise Exception
 
         self.user_id = user_id
         self.user_name = user_name

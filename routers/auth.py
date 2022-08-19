@@ -16,7 +16,6 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 
 class LoginModel(BaseModel):
-    # email: Optional[str] = None
     user_id: Optional[int] = None
     password: Optional[str] = None
 

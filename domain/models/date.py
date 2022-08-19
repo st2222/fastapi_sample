@@ -3,8 +3,6 @@ from datetime import datetime, date
 
 class Date:
     def __init__(self, value: str) -> None:
-        if False:
-            raise Exception
         self.value = value
 
     def str_to_date(self) -> date:

@@ -23,9 +23,6 @@ def login(username: Email, password: HashedPassword) -> Dict:
             algorithm='HS256')
         refresh_token = ''
     else:
-        # 例外でもいい？
-        # raise HTTPException?
-        # raise InValidError的なやつ?
         raise Exception('password invalid')
 
     return {'access_token': access_token, 'refresh_token': refresh_token}
@@ -34,5 +31,3 @@ def login(username: Email, password: HashedPassword) -> Dict:
 def verify_token(token: str):
     res = jwt.decode(token, key=KEY, algorithms=ALGO)
     print(res)
-    # if False:
-    #     raise InvalidException()

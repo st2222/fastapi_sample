@@ -13,9 +13,6 @@ from domain.models.user.user_name import UserName
 class ProjectWithUser:
     def __init__(self, project_id: ProjectId, user_id: UserId, user_name: UserName, role: Role, cost_per_hour,
                  total_time: Hour) -> None:
-        # TODO: ここでバリデーションやルールなど書く
-        if False:
-            raise Exception
 
         self.project_id = project_id
         self.user_id = user_id

@@ -12,9 +12,6 @@ from domain.models.report_detail.report_detail import ReportDetail
 class Project:
     def __init__(self, project_id: ProjectId, project_name: ProjectName, budget: Budget, profit_rate: ProfitRate,
                  status: Status,other_cost: OtherCost, report_detail: List[ReportDetail] = []) -> None:
-        # TODO: ここでバリデーションやルールなど書く
-        if False:
-            raise Exception
 
         self.project_id = project_id
         self.project_name = project_name

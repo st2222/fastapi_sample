@@ -10,9 +10,6 @@ from domain.models.report_detail.hour import Hour
 class ProjectWithTotalTime:
     def __init__(self, project_id: ProjectId, project_name: ProjectName, budget: Budget, other_cost: OtherCost,
                  profit_rate: ProfitRate, status: Status, total_time: Hour) -> None:
-        # TODO: ここでバリデーションやルールなど書く
-        if False:
-            raise Exception
 
         self.project_id = project_id
         self.project_name = project_name
